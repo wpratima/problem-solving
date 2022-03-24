@@ -1,13 +1,23 @@
-let a = -50, b = 20
+//swap numbers using third variable
 
-a = a + b
-b = a - b
-a = a - b
+function swap(a, b) {
+    a = a + b
+    b = a - b
+    a = a - b
 
-console.log("output:", a, b)
+    console.log("output:", "a:", a, "b:", b)
+}
 
-a = a * b
-b = a / b
-a = a / b
+swap(-22, 50)
 
-console.log("output:", a, b)
+
+//second method
+function swapNumbers(a, b) {
+    a = a * b
+    b = a / b
+    a = a / b
+    console.log("output:", "a:", a, "b:", b)
+}
+
+swapNumbers(111, 56)
+
